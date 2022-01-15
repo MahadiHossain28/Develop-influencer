@@ -57,6 +57,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 
 }
 .web-size{
@@ -155,16 +156,220 @@ top-banner
     transform: scale(1.1);
 }
 
+/* ---------
+pro
+----------- */
+
+
 .brand {
     margin: 60px;
 }
+.brand hr{
+    margin-top: 85px;
+}
+
 
 .brand-logo {
     display: flex;
+    height: 110px;
+    margin: 0px 160px;
 }
 
 .logo-img {
-    padding: 44px 61px 40px 80px;
-    width: 50px;
+    padding: 40px 24px;
+}
+/* -------------------------
+    product collection
+------------------------- */
+
+.product-coullection h1 {
+    font-size: 28px;
+    line-height: 70px;
+    text-align: center;
+}
+.products {
+    display: grid;
+    grid-template-columns: repeat( 3, 1fr);
+    margin: 40px 196px 0 196px;
+}
+.product {
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    margin: 15px;
+    background-color: #ffffff;
+    padding: 14px;
+    border-radius: 5px;
 }
 
+.product-img {
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 300px;
+    height: 256px;
+}
+
+.products-details {
+    margin: 17px 15px 16px 14px;
+}
+.products-details h2{
+    font-size: 28px;
+    line-height: 40px;
+    color: #18191F;
+}
+.products-details h3{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 150%;
+}
+
+.product-info i {
+    font-size: 14px;
+    line-height: 22px;
+    color: #FB8200;
+}
+.product-info span{
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.see-more {
+    text-decoration: none;
+    color: #E02C6D;
+    margin-right: 197px;
+    margin-top: 35px;
+    font-weight: bold;
+    float: right;
+    margin-bottom: 100px;
+}
+/* --------------------------
+        Featured products
+--------------------------- */
+.one-place {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 123px;
+    padding-left: 165px;
+    width: 80%;
+}
+.buttom-img {
+    text-align: center;
+}
+.Featured h1{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 60px;
+    margin-bottom: 15px;
+    color: #0A0826;
+}
+.Featured p{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+.buttom-button {
+    display: inline-block;
+    background-color: #E02C6D;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700px;
+    color: #ffffff;
+    padding: 10px 24px;
+}
+/* --------------------------
+          footer
+--------------------------- */
+
+.footer {
+    width: 100%;
+    text-align: center;
+    background-color: #36013F;
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+.footer h2 {
+    margin-bottom: 0;
+}
+
+.footer p {
+    color: #D9DBE1;
+    margin: 0;
+}
+
+/* --------------------------
+          resposnive
+--------------------------- */
+@media only screen and (max-width: 360px) {
+    body{
+        flex-direction: column;
+        text-align: center;
+    }
+    .web-size{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .header{
+        margin: 30px 90px;
+    }
+    .logo{
+        font-size: 16px;
+    }
+    .manu{
+        display: none;
+    }
+    .top-banner {
+        flex-direction: column-reverse;
+    }
+    .influencer {
+        margin: 20px 20px;
+        width: 100%;
+    }
+    .top-titel{
+        font-size: 28px;
+    }
+    .top-img{
+        width: 100%;
+        background-image: none;
+        margin: 0;
+    }
+    .top-img img{
+        width: 100%;
+    }
+    
+    .brand{
+        margin: 20px 20px;
+    }
+    .brand hr{
+        margin-top: 20px;
+    }
+    .brand-logo{
+     margin: 0;
+     height: 140px;  
+     flex-wrap: wrap; 
+    }
+    .logo-img {
+        padding: 8px;
+        width: 90px;
+    }
+
+    .products {
+        margin: 0;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .see-more {
+        margin-top: 20px;
+        margin-right: 26px;
+        font-size: 20px;
+    }
+    .one-place {
+       display: none;
+    }
+
+  }
+
+ 
