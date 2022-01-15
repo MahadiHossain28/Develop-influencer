@@ -2,3 +2,93 @@
 /* font-family: 'Inter', sans-serif;
 font-family: 'Poppins', sans-serif;
 font-family: 'Roboto', sans-serif; */
+*{margin: 0; padding: 0;}
+/* body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+.web-size{
+    width: 1440px;
+}
+/* product information start  */
+/* .product{
+    display: flex;
+    justify-content: space-between;
+    height: 475px;
+    margin: 120px;
+    align-items: center;
+
+}
+.pleft{
+    width: 582px;
+}
+.ptitel{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 52px;
+    line-height: 70px;
+    margin-bottom: 5px;
+}
+.pleft p{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.pright{
+        margin-right: 70px;
+        background-image: url(images/Circle\ design.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 400px;
+}
+.pright img{
+    width: 440px;
+    height: 414px;
+} */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+.web-size{
+    width: 1440px;
+}
+/* -------------------------
+         Header
+------------------------ */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 87px 120px 50px 120px;
+}
+.logo {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: bold;
+    color: #3A3A3A;
+}
+
+.logo span {
+    color: #E02C6D;
+    font-weight: 500;
+}
+/* -------------nav bar ----------------*/
+.manu{
+    margin-top: 8px;
+}
+.manu a{
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: #3A3A3A;
+    padding: 6px 12px;
+}
